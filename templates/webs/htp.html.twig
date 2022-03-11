@@ -1,0 +1,28 @@
+{% extends "base_htp.html.twig" %}
+
+{% set title = "How to play" %}
+
+{% block body %}
+    <div class="container">
+        <header>
+            <a href="{{ path('landing') }}" class="home-button">Home</a>
+            <a href="{{ path('game') }}">Play</a> <!-- path('/gu3ss3r/game') -->
+        </header>
+
+        <div class="text">
+            <h1>How to play</h1>
+            <p>
+                Gu3ss3r is a game in which a user is asked for a number within a range of numbers. This number must be
+                ‘guessed’ by the machine as quickly as possible.<br><br>
+                Click on the ‘Play’ button on the top right corner and enter the number to be searched to obtain the result.
+                The result will be the ‘guessed’ number, the number of attempts the machine made to find it and the time
+                spent searching.<br><br>
+                The number will be automatically found through 4 different methods:<br>
+                By half! -> this gamemode uses binary search<br>
+                By thirds -> this gamemode uses ternary search<br>
+                Random -> the number is found through a comparison with a generated random number<br>
+                Blend -> this gamemode is a combination of ‘By half’ and ‘Random’
+            </p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base_lndg.html.twig" %}
+
+{% set title = "Landing Page" %}
+
+{% block body %}
+    <div class="container">
+        <div class="head">
+            <h1>Gu3ss3r</h1>
+
+            <div class="dropleft">
+                <div id="svg-id" onclick="showMenu()">
+                    <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.5 53.25H8.875V47.3333H35.5V53.25ZM62.125 38.4583H8.875V32.5417H62.125V38.4583ZM62.125 23.6667H35.5V17.75H62.125V23.6667Z" fill="#17252A"/>
+                    </svg>
+                </div>
+
+                <div class="dropleft-items" id="dropleft-items-id">
+                    <ul>
+                        <li><a class="closebtn" onclick="hideMenu()">&times;</a></li>
+                        <li class="li-middle"><a href="{{ path('game') }}">Play</a></li>
+                        <li class="li-middle"><a href="{{ path('how_to_play') }}">How to play</a></li>
+                        <li class="li-middle"><a href="{{ path('program_explanation') }}">Program explanation</a></li>
+                    </ul>
+
+                    <footer>Designed by Mele13</footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-txt" id="welcome-txt">
+            <h2>Welcome!</h2>
+            <h3>Can I guess your number?</h3>
+        </div>
+
+        <script>
+            function showMenu() {
+                document.getElementById("dropleft-items-id").style.width ="21.5%";
+                document.getElementById("svg-id").style.marginRight = "250px";
+                document.getElementById("welcome-txt").style.marginLeft = "-250px";
+            }
+
+            function hideMenu() {
+                document.getElementById("dropleft-items-id").style.width = "0";
+                document.getElementById("svg-id").style.marginLeft= "0";
+            }
+        </script>
+    </div>
+{% endblock %}

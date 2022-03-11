@@ -1,0 +1,173 @@
+:root {
+    --color: black;
+    --background-color: #FFF;
+    --solution-color: black;
+    --solution-background-color: #2B7A78;
+    --dropleft-background-color: #17252A;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url("../images/WelcomeRomboids.png");
+    background-size: 100% 106.2%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-top: -3.3em; /* Top of page | screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2.5em;
+    margin-top: 1.2em;
+    cursor: pointer;
+}
+
+.head h1 {
+    position: absolute;
+    color: #FFF;
+    font-family: 'Rowdies', sans-serif;
+    top: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-top: 0.2em;
+    font-size: 60px;
+}
+.head .dropleft {
+    height: 100vh;
+    transition: margin-right .5s;
+}
+
+.head .dropleft .dropleft-items {
+    position: fixed;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background-color: var(--dropleft-background-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.head .dropleft #svg-id {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+.head .dropleft .dropleft-items ul {
+    list-style: none;
+}
+
+.head .dropleft .dropleft-items ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.head .dropleft .dropleft-items ul .closebtn {
+    font-size: 30px;
+}
+
+.head .dropleft .dropleft-items ul .closebtn:hover {
+    color: #2B7A78;
+}
+
+.head .dropleft .dropleft-items ul .li-middle {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 2em;
+}
+
+.head .dropleft .dropleft-items footer {
+    height: 70%;
+    color: var(--background-color);
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h2, h3 {
+    color: #17252A;
+}
+.welcome-txt h2{
+    margin-top: 0.5em;
+    position: absolute;
+    font-size: 80px;
+}
+
+h3 {
+    position: relative;
+    font-size: 30px;
+    top: 98px;
+}
+
+@media screen and (max-width: 992px) {
+    svg{
+        margin-left: 2.3em;
+        width: 50px;
+    }
+
+    .head h1 {
+        font-size: 40px;
+        margin-top: 0.7em;
+        margin-right: 2.6em;
+    }
+
+    .head .dropleft .dropleft-items {
+        width: 32.5%;
+    }
+
+    .head .dropleft .dropleft-items ul .li-middle, .head .dropleft .dropleft-items footer {
+        font-size: 18px;
+    }
+
+    .welcome-txt h2 {
+        font-size: 45px;
+    }
+
+    .welcome-txt h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    svg{
+        margin-left: 2.3em;
+        width: 50px;
+    }
+
+    .head h1 {
+        font-size: 30px;
+        margin-top: 1.2em;
+        margin-right: 3.2em;
+    }
+
+    .head .dropleft .dropleft-items {
+        width: 32.5%;
+    }
+
+    .head .dropleft .dropleft-items ul .li-middle, .head .dropleft .dropleft-items footer {
+        font-size: 14px;
+    }
+
+    .welcome-txt h2 {
+        font-size: 30px;
+    }
+
+    .welcome-txt h3 {
+        font-size: 15px;
+    }
+}

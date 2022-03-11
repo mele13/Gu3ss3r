@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+
+{% set title = "Game" %}
+
+{% block body %}
+
+    <header>
+        <a href="{{ path('landing') }}" class="home-button">Home</a> <!-- path('/gu3ss3r/game') -->
+    </header>
+    <div class="solutions">
+        <h1>I guessed your number!</h1>
+        <h2>Your number is: <span class="guessNumber">{{ guessNumber }}</span></h2>
+        <h2>Algorithm data</h2>
+
+        {% for algorithm, values in solutions %}
+            <div class="solution">
+                <h3>By {{ algorithm }}</h3>
+                <p>
+                    Time: <span class="f-right">{{ values.time }} μs</span><br>
+                    Number of attempts: <span class="f-right">{{ values.attempts|length }}</span><br>
+                </p>
+                <p>
+                    Attempts:
+                    {% for attempt in values.attempts %} <!-- List of attempts || solutions.bla php variables -->
+                        <span class="f-right">{{ attempt }}</span><br>
+                    {% endfor %}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

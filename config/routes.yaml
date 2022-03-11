@@ -1,3 +1,22 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+game:
+  path: /gu3ss3r/game
+  controller: App\Controller\BaseRoutesController::game
+
+guess:
+  path: /gu3ss3r/game/guess
+  controller: App\Controller\GuessNumberController
+
+landing:
+  path: /gu3ss3r
+  controller: App\Controller\LandingRoutesController::landing
+
+how_to_play:
+  path: /gu3ss3r/how_to_play
+  controller: App\Controller\HowToPlayRoutesController::how_to_play
+
+program_explanation:
+  path: /gu3ss3r/program_explanation
+  controller: App\Controller\ProgramExplanation::pex

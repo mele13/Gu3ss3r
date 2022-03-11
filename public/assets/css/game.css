@@ -1,0 +1,184 @@
+:root {
+    --color: black;
+    --background-color: #3AAFA9;
+    --solution-color: black;
+    --solution-background-color: #2B7A78;
+    --link-color: #FFF;
+    --enter-number-color: #DEF2F1;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/LateralRomboids.png");
+    background-repeat: no-repeat;
+    background-size: 100% 101.5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-top: -1.3em; /* Top of page | screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 2.5em;
+    margin-top: 1.5em;
+    font-size: 20px;
+}
+
+header h1 {
+    position: absolute;
+    top: 0;
+    right: 34.5%;
+    color: var(--link-color);
+    font-size: 60px;
+}
+
+.description {
+    position: absolute;
+    top: 17%;
+    color: var(--enter-number-color);
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+form .form-group {
+    width: 100%;
+}
+
+form .form-group label {
+    font-size: 30px;
+    color: var(--solution-color);
+    width: 100%;
+    position: absolute;
+    top: 34%;
+    left: 36%;
+}
+
+form .form-group .blank-input {
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    font-size: 20px;
+}
+
+form .form-group .button-input {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    width: 18%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+form .form-group .button-reset {
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    width: 9%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    header h1 {
+        right: 26%;
+        font-size: 40px;
+        top: 6%;
+    }
+
+    .description {
+        top: 17%;
+        font-size: 18px;
+        right: 25%;
+    }
+
+    form .form-group label {
+        font-size: 25px;
+        top: 28%;
+        left: 28%;
+    }
+
+    form .form-group .blank-input {
+        width: 19%;
+        height: 26px;
+        top: 33%;
+        left: 28.1%;
+        font-size: 20px;
+    }
+
+    form .form-group .button-input {
+        top: 33%;
+        left: 49%;
+        width: 27%;
+        font-size: 20px;
+        height: 3.5%;
+    }
+
+    form .form-group .button-reset {
+        top: 47%;
+        left: 43%;
+        width: 17%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        right: 19.5%;
+        font-size: 30px;
+        top: 7%;
+    }
+
+    .description {
+        top: 16%;
+        font-size: 18px;
+    }
+
+    form .form-group label {
+        font-size: 20px;
+        top: 36%;
+        left: 19%;
+    }
+
+    form .form-group .blank-input {
+        width: 25%;
+        height: 23px;
+        top: 40%;
+        left: 15.5%;
+        font-size: 15px;
+    }
+
+    form .form-group .button-input {
+        top: 40%;
+        left: 42.5%;
+        width: 42%;
+        font-size: 15px;
+        height: 3.3%;
+    }
+
+    form .form-group .button-reset {
+        top: 61%;
+        left: 36%;
+        width: 25%;
+        font-size: 15px;
+    }
+}
