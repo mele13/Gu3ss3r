@@ -26,6 +26,8 @@ Follow these steps to get started:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mele13/Gu3ss3r.git
+   ```
+   ```bash
    cd Gu3ss3r
    ```
 2. Install dependencies:
