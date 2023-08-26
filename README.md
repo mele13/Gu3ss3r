@@ -14,6 +14,8 @@ Welcome to the Gu3ss3r project repository! This is a simple guessing number game
 
 Gu3ss3r is a Symfony-based PHP application that demonstrates different algorithms for guessing a user's chosen number within a specified range. The application provides multiple algorithms, each with its own approach to make educated guesses. It's a fun project to explore different strategies for solving the same problem.
 
+![Gu3ss3r_gif](https://github.com/mele13/Gu3ss3r/assets/87198060/4ba9147c-4d7a-44d0-8aed-53a001576eaa)
+
 ## Getting Started
 
 To run this project locally, you'll need:
